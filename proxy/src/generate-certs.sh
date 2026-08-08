@@ -23,9 +23,9 @@ export SSL_SIZE="4096"
 export SSL_EXPIRE="3650" # 10 years
 
 export RANDOM_SSL=$(head -c 60 /dev/urandom | tr -dc 'a-zA-Z0-9')
-export SSL_SUBJECT="${RANDOM_SSL}.net"
-export SSL_DNS=${SSL_DNS}
-export SSL_IP=${SSL_IP}
+export SSL_SUBJECT="${RANDOM_SSL}.duckdns.org"
+export SSL_DNS=${lucas-proxy.duckdns.org}
+export SSL_IP=${45.166.41.251}
 
 export DEBUG=${DEBUG:=1}
 
